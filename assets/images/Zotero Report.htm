@@ -1,0 +1,3479 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Zotero Report</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9CgpkaXYgdGFibGUgewoJYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsKfQoKZGl2IHRhYmxlIHRkLCBkaXYgdGFibGUgdGggewoJYm9yZGVyOiAxcHggI2NjYyBzb2xpZDsKCWJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7Cgl3b3JkLWJyZWFrOiBicmVhay1hbGw7Cn0KCmRpdiB0YWJsZSB0ZCBwOmVtcHR5OjphZnRlciwgZGl2IHRhYmxlIHRoIHA6ZW1wdHk6OmFmdGVyIHsKCWNvbnRlbnQ6ICJcMDBhMCI7Cn0KCmRpdiB0YWJsZSB0ZCAqOmZpcnN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpmaXJzdC1jaGlsZCB7CgltYXJnaW4tdG9wOiAwOwp9CgpkaXYgdGFibGUgdGQgKjpsYXN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpsYXN0LWNoaWxkIHsKCW1hcmdpbi1ib3R0b206IDA7Cn0K">
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K">
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg==">
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_3D7TY97B" class="item book">
+			<h2>Accomplishing NAGPRA: perspectives on the intent, impact, and 
+future of the Native American Graves Protection and Repatriation Act</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Sangita Chari</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jaime M. N. Lavallee</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2013</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Accomplishing NAGPRA</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Call Number</th>
+						<td>KF4306.R4 A23 2013</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Corvallis, Corvallis, OR</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Oregon State University Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-0-87071-721-5</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>First peoples (2010)</td>
+					</tr>
+					<tr>
+					<th># of Pages</th>
+						<td>293</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:14:50 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:14:50 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Antiquities</li>
+					<li>Law and legislation</li>
+					<li>Law and legislation; Cultural property</li>
+					<li>Material culture</li>
+					<li>Repatriation</li>
+					<li>United States; Human remains (Archaeology)</li>
+					<li>United States; Indians of North America</li>
+					<li>United States. Native American Graves Protection and Repatriation Act; Human remains (Archaeology)</li>
+				</ul>
+			</li>
+
+
+			<li id="item_8I67HHRS" class="item book">
+			<h2>Anthropologists, indigenous scholars and the research endeavour: seeking bridges towards mutual respect</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Laara Fitznor</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Joy Hendry</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>This collection offers the fruits of a stimulating workshop 
+that sought to bridge the fraught relationship which sometimes continues
+ between anthropologists and indigenous/native/aboriginal scholars, 
+despite areas of overlapping interest. Participants from around the 
+world share their views and opinions on subjects ranging from ideas for 
+reconciliation, the question of what might constitute a universal 
+""science,"" indigenous heritage, postcolonial museology, the boundaries
+ of the term ""indigeneity,"" different senses as ways of knowing, and 
+the very issue of writing as a method of dissemi</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2012</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Anthropologists, indigenous scholars and the research endeavour</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>New York</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Routledge</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-136-33115-2</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>Routledge studies in anthropology</td>
+					</tr>
+					<tr>
+					<th>Series Number</th>
+						<td>5</td>
+					</tr>
+					<tr>
+					<th># of Pages</th>
+						<td>313</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:08:03 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:08:03 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Anthropology</li>
+					<li>Research; Ethnoscience; Communication in anthropology</li>
+					<li>Research; Indigenous peoples</li>
+				</ul>
+			</li>
+
+
+			<li id="item_749M2A89" class="item book">
+			<h2>Appropriating the past: philosophical perspectives on the practice of archaeology</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Geoffrey Scarre</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Robin Coningham</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>James O. Young</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>In this book an international team of archaeologists, 
+philosophers, lawyers and heritage professionals addresses significant 
+ethical questions about the rights to access, manage and interpret the 
+material remains of the past. The chapters explore competing claims to 
+interpret and appropriate the past and the major ethical issues 
+associated with them, including handling the sacred; contested rights 
+over sites, antiquities and artifacts; the involvement of local 
+communities in archaeological research; and the legal status of heritage
+ sites. The book covers a range of hotly debated topics in contemporary 
+archaeological practice, focusing particularly on the relationship 
+between academic archaeologists and indigenous communities for whom the 
+material remnants of the past that form the archaeological record may be
+ part of a living tradition and anchors of social identity.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2013</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Appropriating the past</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Cambridge</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>University Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-139-79312-4</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:10:38 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:10:38 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Antiquities</li>
+					<li>Archaeology</li>
+					<li>Collection and preservation</li>
+					<li>Moral and ethical aspects; Indigenous peoples</li>
+					<li>Philosophy; Archaeology</li>
+				</ul>
+			</li>
+
+
+			<li id="item_SF38SDS7" class="item book">
+			<h2>Arts-Based Methods for Decolonising Participatory Research</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Tiina Seppälä</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>Tiina Seppälä</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>Melanie Sarantou</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>Satu Miettinen</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>In an effort to challenge the ways in which colonial power 
+relations and Eurocentric knowledges are reproduced in participatory 
+research, this book explores whether and how it is possible to use 
+arts-based methods for creating more horizontal and democratic research 
+practices. In discussing both the transformative potential and 
+limitations of arts-based methods, the book asks: What can arts-based 
+methods contribute to decolonising participatory research, its processes
+ and practices? The book takes part in ongoing debates related to the 
+need to decolonise research, and investigates practical contributions of
+ arts-based methods in the practise-led research domain. Further, it 
+discusses the role of artistic research in depth, locating it in a 
+decolonising context. The book will be of interest to scholars working 
+in art history, design, fine arts, service design, social sciences and 
+development studies.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2021</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>New York</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Taylor &amp; Francis</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-00-039253-1</td>
+					</tr>
+					<tr>
+					<th>Edition</th>
+						<td>First Edition.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:04:43 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:04:43 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Research Methodology; Arts and society</li>
+				</ul>
+			</li>
+
+
+			<li id="item_5J34KYE2" class="item book">
+			<h2>Contested holdings: museum collections in political, epistemic and artistic processes of return</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Felicity Bodenstein</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Damiana Oțoiu</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Eva-Maria Troelenberg</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>ProQuest</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Contested holdings</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://ebookcentral.proquest.com/lib/miami/detail.action?docID=6846463">https://ebookcentral.proquest.com/lib/miami/detail.action?docID=6846463</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/28/2023, 6:12:02 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>New York</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Berghahn Books</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-80073-424-1</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>Museums and collections ; v. 14</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:12:02 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:12:02 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Case studies</li>
+					<li>Case studies; Human remains (Archaeology)</li>
+					<li>Case studies; Museum exhibits</li>
+					<li>Case studies; Museums</li>
+					<li>Collection management</li>
+					<li>Cultural property</li>
+					<li>Moral and ethical aspects</li>
+					<li>Repatriation</li>
+				</ul>
+			</li>
+
+
+			<li id="item_ZQ7IKMLB" class="item book">
+			<h2>Contesting human remains in museum collections: the crisis of cultural authority</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Tiffany Jenkins</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Since the late 1970s human remains in museum collections have 
+been subject to claims and controversies, such as demands for 
+repatriation by indigenous groups who suffered under colonization. These
+ requests have been strongly contested by scientists who research the 
+material and consider it unique evidence. This book charts the 
+influences at play on the contestation over human remains and examines 
+the construction of this problem from a cultural perspective. It shows 
+that claims on dead bodies are not confined to once colonized groups. A 
+group of British Pagans, Honouring the A</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2011</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Contesting human remains in museum collections</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>New York</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Routledge</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-136-89785-6</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>Routledge research in museum studies</td>
+					</tr>
+					<tr>
+					<th>Series Number</th>
+						<td>1</td>
+					</tr>
+					<tr>
+					<th># of Pages</th>
+						<td>185</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:15:07 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:15:07 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Antiquities</li>
+					<li>Collection and preservation; Cultural property</li>
+					<li>Collection management</li>
+					<li>Human remains (Archaeology); Human remains (Archaeology)</li>
+					<li>Moral and ethical aspects; Cultural property</li>
+					<li>Moral and ethical aspects; Indigenous peoples</li>
+					<li>Political aspects; Cultural property</li>
+					<li>Political aspects; Museums</li>
+					<li>Repatriation</li>
+					<li>Repatriation; Museums</li>
+				</ul>
+			</li>
+
+
+			<li id="item_FNUYSRED" class="item book">
+			<h2>Critical Perspectives on Cultural Memory and Heritage Construction, Transformation and Destruction</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Veysel Apaydan</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Critical Perspectives on Cultural Memory and Heritage focuses 
+on the importance of memory and heritage for individual and group 
+identity, and for their sense of belonging. It aims to expose the 
+motives and discourses related to the destruction of memory and heritage
+ during times of war, terror, sectarian conflict and through capitalist 
+policies. It is within these affected spheres of cultural heritage where
+ groups and communities ascribe values, develop memories, and shape 
+their collective identity. Chapters in the volume address cultural 
+memory and heritage from six global perspectives and contexts: first, 
+the relationship between cultural memory and heritage; second, the 
+effect of urban development and large infrastructure on heritage; third,
+ the destruction of indigenous heritage; fourth, the destruction of 
+heritage in relation to erasing memory during sectarian violence and 
+conflict; fifth, the impact of policymaking on cultural heritage assets;
+ and sixth, a broad reflection on the destruction, change and 
+transformation of heritage in an epilogue by Cornelius Holtorf, 
+archaeologist and Chair of Heritage Futures at UNESCO.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2020</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>London</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>UCL Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-78735-484-5</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:02:29 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:02:29 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Museology &amp; heritage studies; Archaeology; Anthropology; Kulturerbe; Anthropologie; Ethnologie; Archäologie</li>
+				</ul>
+			</li>
+
+
+			<li id="item_R3IJ9AF5" class="item book">
+			<h2>Cultural property and contested ownership: the trafficking of artefacts and the quest for restitution</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Brigitta Hauser-Schäublin</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Lyndel V. Prott</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>EBSCOhost</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2016</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Cultural property and contested ownership</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://access.library.miami.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&amp;scope=site&amp;db=nlebk&amp;db=nlabk&amp;AN=1249007">http://access.library.miami.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&amp;scope=site&amp;db=nlebk&amp;db=nlabk&amp;AN=1249007</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/28/2023, 6:14:15 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Abingdon, Oxon ; New York, NY</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Routledge</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-317-28182-5</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:14:15 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:14:15 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Cultural property</li>
+					<li>Protection; Cultural property</li>
+					<li>Repatriation; Archaeological thefts; Art thefts; Restitution</li>
+				</ul>
+			</li>
+
+
+			<li id="item_MUQU9M2B" class="item book">
+			<h2>Decolonizing "Prehistory": Deep Time and Indigenous Knowledges in North America</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Gesa Mackenthun</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Christen Mucher</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Decolonizing "Prehistory" combines a critical investigation of
+ the documentation of the American deep past with perspectives from 
+Indigenous traditional knowledges and attention to ongoing systems of 
+intellectual colonialism. Bringing together experts from American 
+studies, archaeology, anthropology, legal studies, history, and literary
+ studies, this interdisciplinary volume offers essential information 
+about the complexity and ambivalence of colonial encounters with 
+Indigenous peoples in North America, and their impact on American 
+scientific discourse. The chapters in this book reveal how anthropology,
+ archaeology, and cultural heritage have shaped the collective 
+ideological construction of Indigenous cultures, while actively 
+empowering the voices that disrupt conventional tropes and narratives of
+ "prehistory." Constructions of America's ancient past-or the invention 
+of American "prehistory"-occur in national and international political 
+frameworks, which are characterized by struggles over racial and ethnic 
+identities, access to resources and environmental stewardship, the 
+commodification of culture for touristic purposes, and the exploitation 
+of Indigenous knowledges and histories by industries ranging from 
+education to film and fashion. The past's ongoing appeal reveals the 
+relevance of these narratives to current-day concerns about individual 
+and collective identities and pursuits of sovereignty and 
+self-determination, as well as to questions of the origin-and destiny-of
+ humanity. Decolonizing "Prehistory" critically examines and challenges 
+the paradoxical role that modern scholarship plays in adding legitimacy 
+to, but also delegitimizing, contemporary colonialist practices. 
+Contributors: Rick Budhwa, Keith Thor Carlson, Kirsten Matoy Carlson, 
+Jessica Christie, Philip J. Deloria, Melissa Gniadek, Annette Kolodny, 
+Gesa Mackenthun, Christen Mucher, Naxaxalhts'i (aka Sonny McHalsie), 
+Jeff Oliver, Mathieu Picas, Daniel Lord Smail, Coll Thrush</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2021</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Decolonizing "Prehistory"</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>s.l.]</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>The University of Arizona Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-0-8165-4287-1</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>Archaeology of Indigenous-Colonial Interactions in the Americas</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:07:35 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:07:35 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>History</li>
+					<li>Indigenous Peoples of the Americas; History</li>
+				</ul>
+			</li>
+
+
+			<li id="item_XX2FP6E3" class="item book">
+			<h2>Decolonizing methodologies: research and indigenous peoples</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Linda Tuhiwai Smith</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>ProQuest</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2021</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Decolonizing methodologies</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://ebookcentral.proquest.com/lib/miami/detail.action?docID=6605401">https://ebookcentral.proquest.com/lib/miami/detail.action?docID=6605401</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/28/2023, 6:08:51 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>London</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Zed Books</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-78699-816-3</td>
+					</tr>
+					<tr>
+					<th>Edition</th>
+						<td>Third edition.</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:08:51 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:08:51 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>History</li>
+					<li>Indigenous peoples</li>
+					<li>Methodology; Imperialism</li>
+					<li>Research; Ethnology</li>
+				</ul>
+			</li>
+
+
+			<li id="item_V4SQYRQM" class="item book">
+			<h2>Disputed archival heritage</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>James Lowry</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jeannette A. Bastian</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>"Disputed Archival Heritage brings important new perspectives 
+into the discourse on displaced archives. In contrast to shared or joint
+ heritage framings, the book considers the implications of force, 
+violence and loss in the displacement of archival heritage. With 
+chapters from established and emerging scholars in the field of archival
+ studies, Disputed Archival Heritage extends and enriches the 
+conversation that started with the earlier volume, Displaced Archives. 
+Advancing novel theories and methods for understanding disputes and 
+claims over archives, the volume includes chapters that focus on 
+Indigenous records in settler colonial states; literary and community 
+archives; sub-national and private sector displacements; successes in 
+repatriating formerly displaced archives; comparisons with cultural 
+objects seized by colonial powers; and the relationship between 
+repatriation and reparations. Analysing key concepts such as joint 
+heritage and provenance, the contributors unsettle Western 
+understandings of records, place and ownership. Disputed Archival 
+Heritage speaks to the growing interest in shared archival heritage, 
+repatriation of cultural artefacts and cultural diasporas. As such, it 
+will be a useful resource for academics, students and practitioners 
+working in the field of archives, records, and information management, 
+as well as cultural property and heritage management, peace and conflict
+ studies and international law"--</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2023</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Abingdon, Oxon ; New York, NY</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Routledge</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-00-305776-5</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:11:49 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:11:49 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Administration</li>
+					<li>Archives</li>
+					<li>Management</li>
+					<li>Moral and ethical aspects</li>
+					<li>Moral and ethical aspects; Records</li>
+					<li>Political aspects; Cultural property</li>
+					<li>Repatriation; Archives</li>
+				</ul>
+			</li>
+
+
+			<li id="item_3VH5VYVP" class="item book">
+			<h2>Engaged archaeology in the Southwestern United States and Northwestern Mexico</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Kelley Hays-Gilpin</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Sarah A. Herr</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Patrick D. Lyons</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>JSTOR</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2021</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://access.library.miami.edu/login?url=https://www.jstor.org/stable/10.2307/j.ctv1qr6szx">http://access.library.miami.edu/login?url=https://www.jstor.org/stable/10.2307/j.ctv1qr6szx</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/28/2023, 6:13:14 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Louisville, Colorado</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>University Press of Colorado</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-64642-171-8</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>Proceedings of the Southwest Symposium</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:13:14 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:13:14 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Antiquities</li>
+					<li>Antiquities; Mexico, North</li>
+					<li>Cultural property</li>
+					<li>Mexico, North; Archaeometry</li>
+					<li>Mexico, North; Ethnoarchaeology; Southwest, New</li>
+					<li>Protection</li>
+					<li>Repatriation</li>
+					<li>Southwest, New; Archaeometry</li>
+					<li>Southwest, New; Cultural property</li>
+					<li>Southwest, New; Indians of North America</li>
+				</ul>
+			</li>
+
+
+			<li id="item_UVMJZUWG" class="item book">
+			<h2>First Nations cultural heritage and law case studies, voices, and perspectives</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Catherine E. Bell</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Val Napoleon</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2008</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Vancouver, BC</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>UBC Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-282-45738-6</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>Law and society series (Vancouver, B.C.)</td>
+					</tr>
+					<tr>
+					<th># of Pages</th>
+						<td>540</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:16:32 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:16:32 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Canada</li>
+					<li>Canada; Autochtones</li>
+					<li>Canada; Biens culturels</li>
+					<li>Canada; Cultural property</li>
+					<li>Canada; Human remains (Archaeology)</li>
+					<li>Canada; Indians of North America</li>
+					<li>Canada; Indiens d'Amérique</li>
+					<li>Canada; Restes humains (Archéologie)</li>
+					<li>Cas, Études de; Biens culturels</li>
+					<li>Case studies; Cultural property</li>
+					<li>Cultural property</li>
+					<li>Culture matérielle</li>
+					<li>Droit</li>
+					<li>Land tenure</li>
+					<li>Law and legislation</li>
+					<li>Legal status, laws, etc.</li>
+					<li>Material culture</li>
+					<li>Protection</li>
+					<li>Rapatriement</li>
+					<li>Repatriation</li>
+					<li>Restitution</li>
+					<li>Terres</li>
+				</ul>
+			</li>
+
+
+			<li id="item_EA5FXW4B" class="item book">
+			<h2>Inconvenient Heritage: Colonial Collections and Restitution in the Netherlands and Belgium</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jos Beurden</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The discussion about objects, human remains and archives from 
+former colonial territories is becoming increasingly heated. Over the 
+centuries, a multitude of items – including a cannon of the King of 
+Kandy, power-objects from DR Congo, Benin bronzes, Javanese temple 
+statues, M.ori heads and strategic documents – has ended up in museums 
+and private collections in Belgium and the Netherlands by improper 
+means. Since gaining independence, former colonies have been calling for
+ the return of their lost heritage. As continued possession of these 
+objects only grows more uncomfortable, governments and museums must 
+decide what to do. How did these objects get here? Are they all looted, 
+and how can we find out? How does restitution work in practice? Are 
+there any appealing examples? How do other former colonial powers deal 
+with restitution? Do former colonies trust their intentions? The answers
+ to these questions are far from unambiguous, but indispensable for a 
+balanced discussion.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Inconvenient Heritage</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Amsterdam</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>University Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-90-485-5711-0</td>
+					</tr>
+					<tr>
+					<th># of Pages</th>
+						<td>248</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:12:21 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:12:21 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Acquisitions</li>
+					<li>Anthropological museums and collections</li>
+					<li>Belgium; Anthropological museums and collections</li>
+					<li>Belgium; Cultural property</li>
+					<li>Belgium; Museums</li>
+					<li>Moral and ethical aspects</li>
+					<li>Museum Studies</li>
+					<li>Netherlands; ART</li>
+					<li>Netherlands; Cultural property</li>
+					<li>Netherlands; Museums</li>
+					<li>Repatriation</li>
+				</ul>
+			</li>
+
+
+			<li id="item_ZK3HPFRT" class="item book">
+			<h2>Indigenous peoples' cultural heritage: rights, debates and challenges</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alexandra Xanthaki</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Indigenous rights to heritage have only recently become the 
+subject of academic scholarship. This collection aims to fill that gap 
+by offering the fruits of a unique conference on this topic organised by
+ the University of Lapland with the help of the Office of the High 
+Commissioner for Human Rights. The conference made clear that important 
+information on Indigenous cultural heritage has remained unexplored or 
+has not been adequately linked with specific actors (such as WIPO) or 
+specific issues (such as free, prior and informed consent). Indigenous 
+leaders explained the impact that disrespect of their cultural heritage 
+has had on their identity, well-being and development. Experts in social
+ sciences explained the intricacies of indigenous cultural heritage. 
+Human rights scholars talked about the inability of current 
+international law to fully address the injustices towards indigenous 
+communities. Representatives of International organisations discussed 
+new positive developments. This wealth of experiences, materials, ideas 
+and knowledge is contained in this important volume.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2017</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Indigenous peoples' cultural heritage</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Leiden</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Brill</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-90-04-34219-4</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:06:53 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:06:53 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Civil rights</li>
+					<li>Indigenous peoples</li>
+					<li>Legal status, laws, etc; Indigenous peoples</li>
+				</ul>
+			</li>
+
+
+			<li id="item_AY6P9QMM" class="item book">
+			<h2>Indigenous Resilience and Indigenous Knowledge Systems in the context of Climate Change</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Huei-Min Tsai</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>Yih-Ren Lin</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>Mucahid Mustafa Bayrak</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>Huei-Min Tsai</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>Yih-Ren Lin</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Indigenous peoples, in Taiwan and worldwide, need to come up 
+with various ways to cope with and adapt to rapid environmental change. 
+This edited book, which is a follow-up to a conference entitled “Climate
+ Change, Indigenous Resilience and Local Knowledge Systems: Cross-time 
+and Cross-boundary Perspectives” organized by the Research Institute for
+ the Humanities and Social Sciences, Ministry of Science and Technology,
+ presents 16 papers which explore the various dimensions of Indigenous 
+resilience to climate change and disasters in Taiwan and other regions 
+in the world. This book explores the interrelated themes of climate 
+change and Indigenous knowledge-based responses, and Indigenous 
+(community) resilience with specific reference to Typhoon Morakot and 
+beyond. The goals of this book are to discuss the international 
+experience with Indigenous resilience; to review Indigenous knowledge 
+for adaptation to climate change and disasters; and to generate a 
+conversation among scholars, Indigenous peoples, and policy-makers to 
+move the agenda forward. This book focusses on Indigenous resilience, 
+the ways in which cultural factors such as knowledge and learning, along
+ with the broader political ecology, determine how local and Indigenous 
+people understand, deal with, and adapt to environmental change.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2021</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Basel, Switzerland</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>MDPI - Multidisciplinary Digital Publishing Institute</td>
+					</tr>
+					<tr>
+					<th># of Pages</th>
+						<td>236</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:06:08 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:06:08 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Research &amp; information: general</li>
+				</ul>
+			</li>
+
+
+			<li id="item_HYZKBACI" class="item book">
+			<h2>Inheriting the past: the making of Arthur C. Parker and indigenous archaeology</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Chip Colwell</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2009</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Inheriting the past</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Call Number</th>
+						<td>E76.45.P36 C656 2009</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Tucson</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>University of Arizona Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-0-8165-2655-0</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:16:12 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:16:12 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Antiquities; Human remains (Archaeology)</li>
+					<li>Biography; Anthropologists</li>
+					<li>Biography; Indians of North America</li>
+					<li>Biography; Scholars</li>
+					<li>Biography; Seneca Indians</li>
+					<li>Moral and ethical aspects</li>
+					<li>Parker, Arthur C. (Arthur Caswell), 1881-1955; Archaeologists</li>
+					<li>Repatriation</li>
+					<li>United States</li>
+					<li>United States; Archaeology</li>
+					<li>United States; Cultural property</li>
+					<li>United States; Ethnoarchaeology</li>
+				</ul>
+			</li>
+
+
+			<li id="item_7XCT7CXU" class="item book">
+			<h2>Kennewick Man: the scientific investigation of an ancient American skeleton</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Douglas W. Owsley</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Richard L. Jantz</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Almost from the day of its accidental discovery along the 
+banks of the Columbia River in Washington State in July 1996, the 
+ancient skeleton of Kennewick Man has garnered significant attention 
+from scientific and Native American communities as well as public media 
+outlets. This volume represents a collaboration among physical and 
+forensic anthropologists, archaeologists, geologists, and geochemists, 
+among others, and presents the results of the scientific study of this 
+remarkable find. Scholars address a range of topics, from basic aspects 
+of osteological analysis to advanced ?research focused</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2014</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Kennewick Man</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://www.miami.eblib.com/EBLWeb/patron/?target=patron&amp;extendedid=P_1790695_0">http://www.miami.eblib.com/EBLWeb/patron/?target=patron&amp;extendedid=P_1790695_0</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/28/2023, 6:14:36 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>College Station, Texas, College Station</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Texas A&amp;M University Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-62349-234-2</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>Peopling of the Americas Publications</td>
+					</tr>
+					<tr>
+					<th>Edition</th>
+						<td>First edition.</td>
+					</tr>
+					<tr>
+					<th># of Pages</th>
+						<td>682</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:14:36 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:14:36 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Anthropometry</li>
+					<li>Antiquities</li>
+					<li>Antiquities; Washington (State)</li>
+					<li>Kennewick Man; Paleo-Indians</li>
+					<li>Washington (State)</li>
+					<li>Washington (State); Indians of North America</li>
+				</ul>
+			</li>
+
+
+			<li id="item_6EQS5DZI" class="item book">
+			<h2>Mapping Digital Divide in Africa: A Mediated Analysis</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Bruce Mutsvairo</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Massimo Ragnedda</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>ProQuest</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2019</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Mapping Digital Divide in Africa</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://ebookcentral.proquest.com/lib/miami/detail.action?docID=5774803">https://ebookcentral.proquest.com/lib/miami/detail.action?docID=5774803</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/28/2023, 6:18:12 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Amsterdam</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>University Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-90-485-3822-5</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:18:12 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:18:12 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Africa; Africa</li>
+					<li>Digital divide</li>
+					<li>Social conditions</li>
+				</ul>
+			</li>
+
+
+			<li id="item_UGXTVITF" class="item book">
+			<h2>Mapping Indigenous Knowledge in the Digital Age</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Romola V. Thumbadoo</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>D. R. Fraser Taylor</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>Romola V. Thumbadoo</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>D. R. Fraser Taylor</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>This Special Issue, “Mapping Indigenous Knowledge in the 
+Digital Age”, explores Indigenous engagement with geo-information in 
+contemporary cartography. Indigenous mapping, incorporating performance,
+ process, product, and positionality as well as tangible and intangible 
+heritage, is speedily entering the domain of cartography, and digital 
+technology is facilitating the engagement of communities in mapping 
+their own locational stories, histories, cultural heritage, 
+environmental, and political priorities. In this publication, multimodal
+ and multisensory online maps combine the latest multimedia and 
+telecommunications technology to examine data and support qualitative 
+and quantitative research, as well as to present and store a wide range 
+of temporal/spatial information and archival materials in innovative 
+interactive storytelling formats. It will be of particular interest to 
+researchers engaged in studies of global human and environmental 
+connection in the age of evolving information technology.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Basel</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>MDPI Books</td>
+					</tr>
+					<tr>
+					<th># of Pages</th>
+						<td>202</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:04:56 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:04:56 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Research &amp; information: general; Geography</li>
+				</ul>
+			</li>
+
+
+			<li id="item_DBJSN5QI" class="item book">
+			<h2>Museum Object Lessons for the Digital Age</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Haidy Geismar</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Museum Object Lessons for the Digital Age explores the nature 
+of digital objects in museums, asking us to question our assumptions 
+about the material, social and political foundations of digital 
+practices. Through four wide-ranging chapters, each focused on a single 
+object – a box, pen, effigy and cloak – this short, accessible book 
+explores the legacies of earlier museum practices of collection, older 
+forms of media (from dioramas to photography), and theories of how 
+knowledge is produced in museums on a wide range of digital projects. 
+Swooping from Ethnographic to Decorative Arts Collections, from the 
+Google Art Project to bespoke digital experiments, Haidy Geismar 
+explores the object lessons contained in digital form and asks what they
+ can tell us about both the past and the future. Drawing on the author’s
+ extensive experience working with collections across the world, Geismar
+ argues for an understanding of digital media as material, rather than 
+immaterial, and advocates for a more nuanced, ethnographic and 
+historicised view of museum digitisation projects than those usually 
+adopted in the celebratory accounts of new media in museums. By locating
+ the digital as part of a longer history of material engagements, 
+transformations and processes of translation, this book broadens our 
+understanding of the reality effects that digital technologies create, 
+and of how digital media can be mobilised in different parts of the 
+world to very different effects.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2018</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>UCL Press</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:01:05 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:01:05 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Museology &amp; heritage studies; Material culture; Sociology 
+&amp; anthropology; Anthropology; Social &amp; cultural anthropology, 
+ethnography</li>
+				</ul>
+			</li>
+
+
+			<li id="item_X7KWLDUC" class="item book">
+			<h2>Naamiwan's drum: the story of a contested repatriaton of Anishinaabe artefacts</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Maureen Anne Matthews</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>"Naamiwan's Drum follows the story of a famous Ojibwe medicine
+ man, his gifted grandson, and remarkable water drum. This drum, and 
+forty other artefacts, were given away by a Canadian museum to an 
+American Anishinaabe group that had no family or community connections 
+to the collection. Many years passed before the drum was returned to the
+ family and only half of the artefacts were ever returned to the 
+museum."-- Provided by publisher. , "Maureen Matthews takes us through 
+this astonishing set of events from multiple perspectives, exploring 
+community and museum viewpoints, visiting the ceremonial group leader in
+ Wisconsin, and finally looking back from the point of view of the drum.
+ The book contains a powerful Anishinaabe interpretive perspective on 
+repatriation and on anthropology itself. Containing fourteen beautiful 
+colour illustrations, Naamiwan's Drum is a compelling account of 
+repatriation as well as a cautionary tale for museum professionals."-- 
+Provided by publisher.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2016</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Naamiwan's drum</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Call Number</th>
+						<td>E99.C6 M38 2016</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Toronto ; Buffalo ; London</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>University of Toronto Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-4426-5015-2</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:14:26 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:14:26 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Acquisitions</li>
+					<li>Antiquities</li>
+					<li>Case studies</li>
+					<li>Case studies; Cultural property</li>
+					<li>Case studies; Drum</li>
+					<li>Case studies; Manitoba</li>
+					<li>Case studies; Manitoba Museum</li>
+					<li>Case studies; Museums</li>
+					<li>Case studies; Museums and Indians</li>
+					<li>Case studies; Ojibwa Indians</li>
+					<li>Manitoba</li>
+					<li>Material culture</li>
+					<li>Museums</li>
+					<li>Protection</li>
+					<li>Repatriation</li>
+					<li>University of Winnipeg. Anthropology Museum</li>
+				</ul>
+			</li>
+
+
+			<li id="item_X29HWD5D" class="item book">
+			<h2>Naamiwan's drum: the story of a contested repatriaton of Anishinaabe artefacts</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Maureen Anne Matthews</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>"Naamiwan's Drum follows the story of a famous Ojibwe medicine
+ man, his gifted grandson, and remarkable water drum. This drum, and 
+forty other artefacts, were given away by a Canadian museum to an 
+American Anishinaabe group that had no family or community connections 
+to the collection. Many years passed before the drum was returned to the
+ family and only half of the artefacts were ever returned to the 
+museum."-- Provided by publisher. , "Maureen Matthews takes us through 
+this astonishing set of events from multiple perspectives, exploring 
+community and museum viewpoints, visiting the ceremonial group leader in
+ Wisconsin, and finally looking back from the point of view of the drum.
+ The book contains a powerful Anishinaabe interpretive perspective on 
+repatriation and on anthropology itself. Containing fourteen beautiful 
+colour illustrations, Naamiwan's Drum is a compelling account of 
+repatriation as well as a cautionary tale for museum professionals."-- 
+Provided by publisher.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2016</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Naamiwan's drum</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Call Number</th>
+						<td>E99.C6 M38 2016</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Toronto ; Buffalo ; London</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>University of Toronto Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-4426-5015-2</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:14:28 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:14:28 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Acquisitions</li>
+					<li>Antiquities</li>
+					<li>Case studies</li>
+					<li>Case studies; Cultural property</li>
+					<li>Case studies; Drum</li>
+					<li>Case studies; Manitoba</li>
+					<li>Case studies; Manitoba Museum</li>
+					<li>Case studies; Museums</li>
+					<li>Case studies; Museums and Indians</li>
+					<li>Case studies; Ojibwa Indians</li>
+					<li>Manitoba</li>
+					<li>Material culture</li>
+					<li>Museums</li>
+					<li>Protection</li>
+					<li>Repatriation</li>
+					<li>University of Winnipeg. Anthropology Museum</li>
+				</ul>
+			</li>
+
+
+			<li id="item_GL2W5F5I" class="item book">
+			<h2>Plundered skulls and stolen spirits: inside the fight to reclaim native America's culture</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Chip Colwell</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>"A fascinating account of both the historical and current 
+struggle of Native Americans to recover sacred objects that have been 
+plundered and sold to museums. Museum curator and anthropologist Chip 
+Colwell asks the all-important question: Who owns the past? Museums that
+ care for the objects of history or the communities whose ancestors made
+ them?"--Provided by the publisher.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2017</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Plundered skulls and stolen spirits</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Call Number</th>
+						<td>E98.M34 C65 2017</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Chicago</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>The University of Chicago Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-0-226-29899-3</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:13:45 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:13:45 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Antiquities; Indians of North America</li>
+					<li>Material culture</li>
+					<li>Material culture; Museums and Indians; United States; Native American Graves Protection and Repatriation Act (United States)</li>
+					<li>Moral and ethical aspects</li>
+					<li>Moral and ethical aspects; Cultural property</li>
+					<li>Repatriation</li>
+					<li>Repatriation; Human remains (Archaeology)</li>
+					<li>Repatriation; Indians of North America</li>
+					<li>United States</li>
+					<li>United States; Anthropological ethics</li>
+					<li>United States; Anthropological ethics; Anthropological museums and collections; Archaeology</li>
+					<li>United States; Anthropological museums and collections</li>
+					<li>United States; Archaeology</li>
+					<li>United States; Cultural property</li>
+					<li>United States; Human remains (Archaeology)</li>
+					<li>United States; Museums and Indians</li>
+					<li>United States. Native American Graves Protection and Repatriation Act; Indians of North America</li>
+				</ul>
+			</li>
+
+
+			<li id="item_JCZFLUSL" class="item book">
+			<h2>Practicing Decoloniality in Museums: A Guide with Global Examples</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Csilla Ariese</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>Csilla E. Ariese</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>Csilla E Ariese</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>Magdalena Wróblewska</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>Magdalena Wróblewska</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>The cry for decolonization has echoed throughout the museum 
+world. Although perhaps most audibly heard in the case of ethnographic 
+museums, many different types of museums have felt the need to engage in
+ decolonial practices. Amidst those who have argued that an institution 
+as deeply colonial as the museum cannot truly be decolonized, museum 
+staff and museologists have been approaching the issue from different 
+angles to practice decoloniality in any way they can. This book collects
+ a wide range of practices from museums whose audiences, often highly 
+diverse, come together in sometimes contentious conversations about 
+pasts and futures. Although there are no easy or uniform answers as to 
+how best to deal with colonial pasts, this collection of practices 
+functions as an accessible toolkit from which museum staff can choose in
+ order to experiment with and implement methods according to their own 
+needs and situations. The practices are divided thematically and 
+include, among others, methods for decentering, improving transparency, 
+and increasing inclusivity.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2021</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Practicing Decoloniality in Museums</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Amsterdam</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>University Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-90-485-5483-6</td>
+					</tr>
+					<tr>
+					<th># of Pages</th>
+						<td>126</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:04:06 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:04:06 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>ART</li>
+					<li>Museum Studies</li>
+				</ul>
+			</li>
+
+
+			<li id="item_KSWZSUN7" class="item book">
+			<h2>Reclaiming culture Indigenous people and self-representation</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Joy Hendry</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>This book focuses on the renewal (or rekindling) of cultural 
+identity, especially in populations previously considered 'extinct'. At 
+the same time, Hendry sets out to explain the importance of ensuring the
+ survival of these cultures. By drawing a fine and textured picture of 
+these cultures, Hendry illuminates extraordinary diversity that was, at 
+one point, seriously endangered, and explains why it should matter in 
+today's world.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2005</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>New York</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Palgrave Macmillan</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-281-36809-6</td>
+					</tr>
+					<tr>
+					<th>Edition</th>
+						<td>1st ed.</td>
+					</tr>
+					<tr>
+					<th># of Pages</th>
+						<td>256</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:11:26 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:11:26 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Ecology; Indigenous peoples</li>
+					<li>Education; Racism in museum exhibits; Cultural property</li>
+					<li>Ethnic identity; Indigenous peoples</li>
+					<li>Indigenous peoples</li>
+					<li>Protection; Cultural property</li>
+					<li>Repatriation; Culture and tourism</li>
+				</ul>
+			</li>
+
+
+			<li id="item_NS8GHDMP" class="item book">
+			<h2>Reparations for indigenous peoples international and comparative perspectives</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Federico Lenzerini</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2008</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Oxford ; New York</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Oxford University Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-0-19-155305-9</td>
+					</tr>
+					<tr>
+					<th># of Pages</th>
+						<td>xxvii+650</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:09:34 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:09:34 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Indigenous peoples</li>
+					<li>Legal status, laws, etc; Indigenous peoples (International law); Indigenous peoples</li>
+					<li>Reparations; Reparations for historical injustices</li>
+				</ul>
+			</li>
+
+
+			<li id="item_F3HAPNZX" class="item book">
+			<h2>Repatriation of sacred indigenous cultural heritage and the law: lessons from the United States and Canada</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Vanessa Tünsmeyer</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Repatriation of sacred indigenous cultural heritage and the law</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Call Number</th>
+						<td>K3791 .T86 2022</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Cham, Switzerland</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Springer</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-3-030-89046-9</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>Studies in art, heritage, law and the market ; v. 3</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:12:38 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:12:38 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Antiquities</li>
+					<li>Canada; Cultural property</li>
+					<li>Canada; Patrimoine culturel</li>
+					<li>Cultural property</li>
+					<li>États-Unis; Cultural property</li>
+					<li>Law and legislation; Patrimoine culturel</li>
+					<li>Material culture; Indians of North America</li>
+					<li>Repatriation</li>
+					<li>Repatriation; Canada; United States</li>
+					<li>Restitution</li>
+					<li>United States; Indians of North America</li>
+				</ul>
+			</li>
+
+
+			<li id="item_8L8EZ37H" class="item book">
+			<h2>Returning Southeast Asia's past: objects, museums, and restitution</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Louise Tythacott</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Panggah Ardiyansyah</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>JSTOR</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2021</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Returning Southeast Asia's past</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://access.library.miami.edu/login?url=https://www.jstor.org/stable/10.2307/j.ctv1r4xctd">http://access.library.miami.edu/login?url=https://www.jstor.org/stable/10.2307/j.ctv1r4xctd</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/28/2023, 6:12:50 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Singapore</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>NUS Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-981-325-173-1</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>Art and archaeology of Southeast Aisa : Hindu-Buddhist traditions</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:12:50 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:12:50 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Antiquities</li>
+					<li>Cultural property</li>
+					<li>Political aspects</li>
+					<li>Repatriation</li>
+					<li>Southeast Asia; Cultural property</li>
+					<li>Southeast Asia; Southeast Asia</li>
+				</ul>
+			</li>
+
+
+			<li id="item_ES2BFN2M" class="item book">
+			<h2>Scattered Finds: Archaeology, Egyptology and Museums</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alice Stevenson</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Scattered Finds explores the politics, personalities and 
+social histories that linked fieldwork in Egypt with the varied 
+organizations around the world that received finds. Case studies range 
+from Victorian municipal museums and women’s suffrage campaigns in the 
+UK, to the development of some of the USA’s largest institutions, and 
+from university museums in Japan to new institutions in 
+post-independence Ghana. By juxtaposing a diversity of sites for the 
+reception of Egyptian cultural heritage over the period of a century, 
+Alice Stevenson presents new ideas about the development of archaeology,
+ museums and the construction of Egyptian heritage. She also addresses 
+the legacy of these practices, raises questions about the nature of the 
+authority over such heritage today, and argues for a stronger ethical 
+commitment to its stewardship.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2019</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Scattered Finds</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>London</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>UCL Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-78735-140-0</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:02:57 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:02:57 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Ancient Egypt; English; Museology &amp; heritage studies; Egyptian archaeology</li>
+					<li>Egyptology; Museum, historic sites, gallery &amp; art guides</li>
+				</ul>
+			</li>
+
+
+			<li id="item_V2Q5E4ZR" class="item book">
+			<h2>The Aftermaths of Participation: Outcomes and Consequences of Participatory Work with Forced Migrants in Museums.</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Susanne Boersma</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>How do participatory museum projects with forced migrants 
+impact both the museum and the participants? What happens during these 
+projects and what is left of them afterwards? Based on interviews with 
+museum practitioners, facilitators and project participants, Susanne 
+Boersma brings together unique insights into museum work with forced 
+migrants. Her study of participatory projects in Germany, the 
+Netherlands and the UK reveals museums' limiting infrastructures, the 
+shortcomings of their ethical frameworks, and the problems of addressing
+ forced migrants as 'communities'. Outlining the diverging objectives, 
+experiences and outcomes of participatory projects, she suggests how 
+these might be united in practice.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>The Aftermaths of Participation</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Bielefeld</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>transcript</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-3-8394-6411-3</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>Edition Museum</td>
+					</tr>
+					<tr>
+					<th>Edition</th>
+						<td>1st ed.</td>
+					</tr>
+					<tr>
+					<th># of Pages</th>
+						<td>272</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:03:12 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:03:12 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Museology &amp; heritage studies; Migration, immigration &amp; emigration</li>
+				</ul>
+			</li>
+
+
+			<li id="item_HID6DD5C" class="item book">
+			<h2>The digital coloniality of power: epistemic disobedience in the social sciences and the legitimacy of the digital age</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Alexander I. Stingl</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>This book makes trouble: it explores the reality that digital 
+culture is largely an extension of an older coloniality of power of the 
+global north. It suggests a line of inquiry for the social sciences to 
+reflect on their own imperial role and develop a contemporary critical 
+and pragmatic scope, shifting their gaze from problems to opportunities.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2016</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>The digital coloniality of power</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Lanham, Maryland</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Lexington Books</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-4985-0193-4</td>
+					</tr>
+					<tr>
+					<th># of Pages</th>
+						<td>427</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:17:04 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:17:04 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Digital divide; Internet</li>
+					<li>Social aspects; Imperialism</li>
+				</ul>
+			</li>
+
+
+			<li id="item_T4V7AXWS" class="item book">
+			<h2>The digital divide</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jan van Dijk</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>EBSCOhost</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2020</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://access.library.miami.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&amp;scope=site&amp;db=nlebk&amp;db=nlabk&amp;AN=2354917">http://access.library.miami.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&amp;scope=site&amp;db=nlebk&amp;db=nlabk&amp;AN=2354917</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/28/2023, 6:19:01 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Cambridge, UK ; Medford, MA</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Polity Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-5095-3446-3</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:19:01 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:19:01 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Digital divide; Computer literacy; Internet literacy; Equality</li>
+				</ul>
+			</li>
+
+
+			<li id="item_LTAJGLVL" class="item book">
+			<h2>The digital divide facing a crisis or creating a myth?</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Benjamin M. Compaine</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Annotation The Digital Divide refers to the perceived gap 
+between those who have access to the latest information technologies and
+ those who do not. If we are indeed in an Information Age, then not 
+having access to this information is an economic and social handicap. 
+Some people consider the Digital Divide to be a national crisis, while 
+others consider it an over-hyped nonissue. This book presents data 
+supporting the existence of such a divide in the 1990's along racial, 
+economic, ethnic, and education lines. But it also presents evidence 
+that by 2000 the gaps are rapidly closing without substantive public 
+policy initiatives and spending. Together, the contributions serve as a 
+sourcebook on this controversial issue.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2001</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Cambridge, Mass.</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>MIT Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-282-10025-1</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>MIT Press sourcebooks</td>
+					</tr>
+					<tr>
+					<th># of Pages</th>
+						<td>xvi+357</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:17:35 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:17:35 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Digital divide</li>
+					<li>Social aspects</li>
+					<li>United States</li>
+					<li>United States; Information technology</li>
+				</ul>
+			</li>
+
+
+			<li id="item_5M3XAGA9" class="item audioRecording">
+			<h2>The digital divide: writings for and against facebook, youtube, texting, and the age of social networking</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Audio Recording</td>
+					</tr>
+					<tr>
+						<th class="performer">Performer</th>
+						<td>Mark Bauerlein</td>
+					</tr>
+					<tr>
+						<th class="performer">Performer</th>
+						<td>Peter Berkrot</td>
+					</tr>
+					<tr>
+						<th class="performer">Performer</th>
+						<td>Xe Sands</td>
+					</tr>
+					<tr>
+						<th class="performer">Performer</th>
+						<td>Tantor Media</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>This definitive work on the perils and promise of the 
+social-media revolution collects writings by today's best thinkers and 
+cultural commentators, with an all-new introduction by The Dumbest 
+Generation author Mark Bauerlein.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2011</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>The digital divide</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Extra</th>
+						<td>Book Title: The digital divide : writings for and against facebook, youtube, texting, and the age of social networking
+Edition: Retail ed.</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Old Saybrook, Conn.]</td>
+					</tr>
+					<tr>
+					<th>Label</th>
+						<td>Tantor Media</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-4526-2298-9</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:19:15 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:19:15 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Digital divide; Technological innovations</li>
+					<li>Social aspects; Social networks</li>
+				</ul>
+			</li>
+
+
+			<li id="item_F2GJVBC4" class="item book">
+			<h2>The long journey home: advancing the Native American Graves 
+Protection and Repatriation Act's promise after 30 years of practice : 
+hearing before the Committee on Indian Affairs, United States Senate, 
+One Hundred Seventeenth Congress, second session, February 2, 2022.</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>United States Congress Senate Committee on Indian Affairs )</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>The long journey home</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://purl.fdlp.gov/GPO/gpo186700">https://purl.fdlp.gov/GPO/gpo186700</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/28/2023, 6:12:56 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Washington</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>U.S. Government Publishing Office</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>United States. Congress. Senate. S. hrg.</td>
+					</tr>
+					<tr>
+					<th>Series Number</th>
+						<td>117</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:12:56 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:12:56 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Government relations</li>
+					<li>Law and legislation</li>
+					<li>Protection</li>
+					<li>Repatriation</li>
+					<li>Rules and practice; Cultural property</li>
+					<li>United States; Cultural property</li>
+					<li>United States; Human remains (Archaeology)</li>
+					<li>United States; Indians of North America</li>
+					<li>United States. Native American Graves Protection and Repatriation Act; United States. Department of the Interior</li>
+				</ul>
+			</li>
+
+
+			<li id="item_Z6LUFAK7" class="item book">
+			<h2>The long journeys home: the repatriations of Henry ʻŌpūkahaʻia and Albert Afraid of Hawk</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Nicholas F. Bellantoni</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>EBSCOhost</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2018</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>The long journeys home</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://access.library.miami.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&amp;scope=site&amp;db=nlebk&amp;db=nlabk&amp;AN=1746456">http://access.library.miami.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&amp;scope=site&amp;db=nlebk&amp;db=nlabk&amp;AN=1746456</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/28/2023, 6:13:28 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Middletown, CT</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Wesleyan University Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-0-8195-7685-9</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>Driftless Connecticut series</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:13:28 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:13:28 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Case studies</li>
+					<li>Case studies; Cultural property</li>
+					<li>Death and burial; Afraid-of-Hawk, Albert, 1879-1900</li>
+					<li>Death and burial; Human remains (Archaeology)</li>
+					<li>Obookiah, Henry, 1792-1818</li>
+					<li>Repatriation</li>
+					<li>United States</li>
+				</ul>
+			</li>
+
+
+			<li id="item_CYTSUFF7" class="item book">
+			<h2>The return of cultural heritage to Latin America: nationalism, policy, and politics in Colombia, Mexico, and Peru</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Pierre Losson</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>Taylor &amp; Francis</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>The return of cultural heritage to Latin America</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://access.library.miami.edu/login?url=https://www.taylorfrancis.com/books/9781003243885">http://access.library.miami.edu/login?url=https://www.taylorfrancis.com/books/9781003243885</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/28/2023, 6:12:30 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Abingdon, Oxon ; New York, NY</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Routledge, Taylor &amp; Francis Group</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-00-324388-5</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>Routledge studies in heritage</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:12:30 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:12:30 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>21st century</li>
+					<li>21st century; Mexico</li>
+					<li>21st century; Peru</li>
+					<li>Colombia; Cultural property</li>
+					<li>Colombia; Nationalism</li>
+					<li>Cultural property</li>
+					<li>Latin America; Cultural property</li>
+					<li>Mexico; Cultural property</li>
+					<li>Mexico; Nationalism</li>
+					<li>Peru; Colombia</li>
+					<li>Peru; Nationalism</li>
+					<li>Politics and government</li>
+					<li>Repatriation</li>
+				</ul>
+			</li>
+
+
+			<li id="item_SZU64QDA" class="item book">
+			<h2>Treasured possessions: indigenous interventions into cultural and intellectual property</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Haidy Geismar</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2013</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Treasured possessions</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Call Number</th>
+						<td>DU760 .G455 2013</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Durham</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Duke University Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-0-8223-5412-3</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>Objects/histories</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:01:35 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:01:35 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Cultural property</li>
+					<li>New Zealand; Intellectual property</li>
+					<li>New Zealand; Ni-Vanuatu; Māori (New Zealand people)</li>
+					<li>Vanuatu; Cultural property</li>
+					<li>Vanuatu; Intellectual property</li>
+				</ul>
+			</li>
+
+
+			<li id="item_INUB9AML" class="item book">
+			<h2>Treasures in trusted hands: negotiating the future of colonial cultural objects</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Jos van Beurden</td>
+					</tr>
+					<tr>
+						<th class="contributor">Contributor</th>
+						<td>ProQuest</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2017</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Treasures in trusted hands</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="http://ebookcentral.proquest.com/lib/miami/detail.action?docID=4862894">http://ebookcentral.proquest.com/lib/miami/detail.action?docID=4862894</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>4/28/2023, 6:13:38 AM</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Leiden, Leiden, [The Netherlands]</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Sidestone Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-90-8890-441-7</td>
+					</tr>
+					<tr>
+					<th>Series</th>
+						<td>CLUES ; volume3</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:13:38 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:13:38 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Cultural property</li>
+					<li>Protection; Cultural property</li>
+					<li>Repatriation</li>
+				</ul>
+			</li>
+
+
+			<li id="item_CIFHECDI" class="item book">
+			<h2>We are coming home: repatriation and the restoration of Blackfoot cultural confidence</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Gerald Thomas Conaty</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>"We Are Coming Home is the story of the highly complex process
+ of repatriation as described by those intimately involved in the work, 
+notably the Piikuni, Siksika, and Kainai elders who provided essential 
+oversight and guidance. We also hear from the Glenbow Museum's president
+ and CEO at the time and from an archaeologist then employed at the 
+Provincial Museum of Alberta who provides an insider's view of the 
+drafting of FNSCORA. These accounts are framed by Conaty's reflections 
+on the impact of museums on First Nations, on the history and culture of
+ the Niitsitapi, or Blackfoot, and on the path forward. With Conaty's 
+passing in August of 2013, this book is also a tribute to his enduring 
+relationships with the Blackfoot, to his rich and exemplary career, and 
+to his commitment to innovation and mindful museum practice"--Provided 
+by publisher.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2015</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>We are coming home</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Edmonton, Alberta</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>AU Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-77199-019-6</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:14:07 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:14:07 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Alberta</li>
+					<li>Alberta; Cultural property</li>
+					<li>Alberta; Kainah Indians</li>
+					<li>Alberta; Museum techniques</li>
+					<li>Alberta; Museums and Indians</li>
+					<li>Alberta; Piegan Indians</li>
+					<li>Alberta; Siksika Indians</li>
+					<li>Glenbow Museum; Canada. First Nations Sacred Ceremonial Objects Repatriation Act; Cultural property</li>
+					<li>Material culture</li>
+					<li>Moral and ethical aspects</li>
+					<li>Repatriation</li>
+				</ul>
+			</li>
+
+
+			<li id="item_AWCDJXMS" class="item book">
+			<h2>Who Owns Antiquity?: Museums and the Battle over Our Ancient Heritage</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>James Cuno</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Whether antiquities should be returned to the countries where 
+they were found is one of the most urgent and controversial issues in 
+the art world today, and it has pitted museums, private collectors, and 
+dealers against source countries, archaeologists, and academics. 
+Maintaining that the acquisition of undocumented antiquities by museums 
+encourages the looting of archaeological sites, countries such as Italy,
+ Greece, Egypt, Turkey, and China have claimed ancient artifacts as 
+state property, called for their return from museums around the world, 
+and passed laws against their future export. But in Who Owns Antiquity?,
+ one of the world's leading museum directors vigorously challenges this 
+nationalistic position, arguing that it is damaging and often 
+disingenuous. "Antiquities," James Cuno argues, "are the cultural 
+property of all humankind," "evidence of the world's ancient past and 
+not that of a particular modern nation. They comprise antiquity, and 
+antiquity knows no borders." Cuno argues that nationalistic retention 
+and reclamation policies impede common access to this common heritage 
+and encourage a dubious and dangerous politicization of antiquities--and
+ of culture itself. Antiquities need to be protected from looting but 
+also from nationalistic identity politics. To do this, Cuno calls for 
+measures to broaden rather than restrict international access to 
+antiquities. He advocates restoration of the system under which source 
+countries would share newly discovered artifacts in exchange for 
+archaeological help, and he argues that museums should again be allowed 
+reasonable ways to acquire undocumented antiquities. Cuno explains how 
+partage broadened access to our ancient heritage and helped create 
+national museums in Cairo, Baghdad, and Kabul. The first extended 
+defense of the side of museums in the struggle over antiquities, Who 
+Owns Antiquity? is sure to be as important as it is controversial.Some 
+images inside the book are unavailable due to digital copyright 
+restrictions.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2010</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Who Owns Antiquity?</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Princeton, NJ</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>Princeton University Press</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-1-283-15249-5</td>
+					</tr>
+					<tr>
+					<th>Edition</th>
+						<td>With a New afterword by the author</td>
+					</tr>
+					<tr>
+					<th># of Pages</th>
+						<td>285</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:15:52 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:15:52 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Acquisitions</li>
+					<li>Antiquities</li>
+					<li>Collection and preservation</li>
+					<li>Collection management</li>
+					<li>International cooperation; History &amp; Archaeology; Archaeology</li>
+					<li>Philosophy; Cultural property</li>
+					<li>Philosophy; Museums</li>
+					<li>Repatriation; Cultural property; Museums</li>
+				</ul>
+			</li>
+
+
+			<li id="item_2AUCTF94" class="item book">
+			<h2>Witnesses to history: a compendium of documents and writings on the return of cultural objects</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Book</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Lyndel V. Prott</td>
+					</tr>
+					<tr>
+						<th class="author">Author</th>
+						<td>Unesco</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>This compendium gives an outline of the historical, 
+philosophical and ethical aspects of the return of cultural objects 
+(e.g. cultural objects displaced during war or in colonial contexts), 
+cites past and present cases (Maya Temple Facade, Nigerian Bronzes, 
+United States of America v. Schultz, Parthenon Marbles and many more) 
+and analyzes legal issues (relevant UNESCO and UNIDROIT Conventions, 
+Supreme Court Decisions, procedure for requests etc.). It examines the 
+ways in which peoples have lost their entire cultural heritage and 
+analyzes the issue of its return and restitution by providing a wide 
+range of perspectives on this subject.--Publisher's description.</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>2009</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>eng</td>
+					</tr>
+					<tr>
+					<th>Short Title</th>
+						<td>Witnesses to history</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>miami-primo.com</td>
+					</tr>
+					<tr>
+					<th>Call Number</th>
+						<td>N8850 .W58 2009</td>
+					</tr>
+					<tr>
+					<th>Place</th>
+						<td>Paris</td>
+					</tr>
+					<tr>
+					<th>Publisher</th>
+						<td>United Nations Educational, Scientific and Cultural Organization</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-92-3-104128-0</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 6:15:45 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 6:15:45 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Tags:</h3>
+				<ul class="tags">
+					<li>Cultural property</li>
+					<li>Protection</li>
+					<li>Repatriation; Cultural property</li>
+				</ul>
+			</li>
+
+
+			<li id="item_SLEU5HWC" class="item journalArticle">
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Journal Article</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>4/28/2023, 5:58:09 AM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>4/28/2023, 5:58:09 AM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_AF3IFDZJ">Decolonization_is_not_a_metaphor.pdf					</li>
+					<li id="item_C7M8CNMB">Ginsburg Indigenous Media.pdf					</li>
+					<li id="item_SCUDGEJW">Haggerty Restoration Buffalo.pdf					</li>
+					<li id="item_SC28S3HT">Wilson, Stuart Global Indigenous Media.pdf					</li>
+				</ul>
+			</li>
+
+		</ul>
+	
+</body></html>
